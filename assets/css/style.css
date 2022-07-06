@@ -1,0 +1,892 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+
+    --color-grey: #F2F2F2;
+    --color-black:#404040;
+    --color-pink: #FF3377;
+    --color-white: #FFFFFF; 
+    --color-purple:#6B54BF;
+}
+
+html, body{
+    height: 100%;
+}
+
+/* == CLASSES AUXILIARES == */
+
+.center{
+    width: 100%;
+    padding:0 2%;
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+/* == CLASSES UTILS == */
+
+a{
+    text-decoration: none;
+}
+
+/* == HEADER IMAGE == */
+
+header .imagemFundo{ 
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../imagens/concurso-LandingPages_02.png');
+}
+
+header img{
+  width: 125px;
+  height:82.5px;
+
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.headerLaptop{
+    display: none;
+}
+
+.boxRegistration h1, h2, p, a{
+    margin-left: 3%;
+}
+
+.boxRegistration h1{
+    font-size: 2.50rem;
+}
+
+.boxRegistration h2, p{
+    font-weight: 200;
+}
+.boxRegistration h2{
+    font-size: 2rem;
+    margin-top: -10px;
+}
+
+.boxRegistration h1, h2{
+    margin-top:150PX;
+
+    color:var(--color-white);
+    font-variant: small-caps; 
+}
+
+.boxRegistration p{
+    width: 100%;
+    max-width: 512px;
+    padding: 10px 0;
+    text-align: justify;
+    color: var(--color-white);
+}
+.boxRegistration p strong{
+    font-size: 1.5rem;
+    font-variant: small-caps;
+}
+
+.boxRegistration a{
+    color: var(--color-white);
+
+    font-weight: bold;
+    font-size: 1.75rem;
+    font-weight: 500;
+    font-variant: small-caps;
+    
+    padding: 12.5px 120px;
+    display: inline-block;
+    background-color: var(--color-pink);
+
+    transition-duration: 2000ms;
+}
+
+.boxRegistration a:hover{
+    color: var(--color-pink);
+    background-color: var(--color-white);
+}
+
+/* == CIRCLE == */
+
+.circle{
+	left: 50%;
+	position:absolute;
+	margin-top: -30px;
+	transform: translateX(-50%);
+
+	width: 60px;
+	height:60px;
+	border-radius:50%;
+	text-align:center;
+	line-height: 60px;
+	background-color: var(--color-white);
+	box-shadow: 0 10px 25px 0 rgba(13, 15, 139, 0.25);
+}
+
+.circle i{
+	top: 5px;
+	font-size:30px;
+	position: relative;
+    color: var(--color-purple);
+}
+
+/* == VIDEO DE LANÇAMENTO == */
+
+.launchVideo{
+    padding: 75px 0;
+    text-align: center;
+}
+
+.launchVideo iframe{
+    width: 100%;
+    height:315px;
+    max-width:560px; 
+}
+
+/* == SESSÃO DE REGISTRO == */
+
+.registrationSession{
+    padding: 50px 0;
+    background-color: var(--color-grey);
+}
+
+.registrationSession h1{
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+.registrationSession p{
+    margin-top: 0px;
+    margin-left:0px;
+    color: var(--color-black);
+}
+
+/* == SESSÃO DE REGISTRO | INPUTS == */
+
+.inputs{
+    margin-top: 25px;
+}
+
+input{
+    width: 100%;
+    outline:none;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.inputs input[type=email]{
+    height: 40px;
+    padding-left: 10px;
+
+    font-size: 1rem;
+    font-variant: small-caps;
+    
+    border-bottom: 2px solid var(--color-pink);
+}
+
+.inputs input[type=submit]{
+    height: 50px;
+    cursor: pointer;
+    color: var(--color-white);
+
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    background-color: var(--color-pink);
+
+    transition-duration: 1500ms;
+}
+
+.inputs input[type=submit]:hover{
+    background-color: var(--color-purple);
+}
+
+/* BENEFÍCIOS */
+
+.boxBenefits{
+    padding: 40px 0;
+}
+
+.benefits{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+}
+
+.benefits .item{
+    display: block;
+    text-align: center;
+    width: 33.33%;
+}
+
+.benefits i p {
+    text-align: center;
+}
+
+/* == ABOUT ROCKETSEAT == */
+
+.aboutRocketseat{
+    padding: 75px 4%;
+    color: var(--color-white);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: var(--color-purple);
+}
+
+.aboutContent h1{
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+.aboutContent p{
+    width: 512px;
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.aboutContent a{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 24px;
+
+    color: var(--color-white);
+
+    font-weight: bold;
+    font-size:1.75rem;
+    font-weight: 500;
+
+    text-align: center;
+    font-variant: small-caps;
+    
+    padding: 12.5px 0;
+    display: inline-block;
+    background-color: var(--color-pink);
+
+    transition-duration: 2000ms;
+}
+
+.aboutContent a:hover{
+    color: var(--color-pink);
+    background-color: var(--color-white);
+}
+
+.aboutImagem img{
+    height:337.5px;
+    width: 600px;
+}
+
+/* == QUESTIONS == */
+
+.sessaoQuestions{
+    padding: 60px 0;
+}
+
+.sessaoQuestions h1{
+    margin-bottom: 24px;
+
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+.card .cardMost{
+    color: var(--color-pink);
+}
+
+.cardTitle{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-grey);
+
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.cardTitle span{
+    padding: 12px 20px;
+    
+    font-size: 1.4rem;
+    font-variant: small-caps;
+}
+
+p.cardContent{
+    text-align: justify;
+    
+    margin-left: 0;
+    padding: 2px 16px;
+
+    height: 0;
+    overflow: hidden;
+    transition: 700ms;
+}
+
+p.cardContent a{
+   color: var(--color-purple);
+
+   font-size: 1rem;
+   font-variant: small-caps;
+}
+
+.mostrar{
+    margin-top: 12px;
+    height: 80px !important;
+}
+
+/* == SLIDER == */
+
+section.slider{
+    padding: 72px 0;
+    background-color: var(--color-black);
+}
+
+.slider h1{    
+    font-size: 2rem;
+    font-variant: small-caps;
+
+    color: var(--color-white);
+}
+
+.slideBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: -150px;
+    position: relative;
+
+    perspective: 1000px;
+}
+
+.slideSingle{
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.slideSingle:hover{
+    transform: rotateY(180deg);
+}
+
+.slideSingle h2{
+    z-index: 1;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-pink);
+
+    top: 450px;
+    position: relative;
+}
+
+.slideSingle img{
+    z-index: -1;
+    cursor: pointer;
+}
+
+.slideSingle .back{
+    width: 305px;
+    height:470px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: -475px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0px 8px;
+    background-color: var(--color-pink);
+    border-right: 1px solid var(--color-white);
+
+    transform: rotateY(180deg);
+}
+
+.slideSingle .back:hover{
+    transform: rotateY(-180deg);
+}
+
+.slideSingle .back > h4{
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+.slideSingle .back > p{
+    margin-left: 0;
+    margin-top: 12px;
+    color: var(--color-white);
+}
+
+.slideSingle .front,
+.slideSingle .back{
+    backface-visibility: hidden;
+}
+
+.range{
+    padding: 48px 0;
+    background-color: var(--color-purple);
+}
+
+.range h4{
+    padding-left: 92px;
+    color: var(--color-grey);
+
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+.range h2{
+    margin: 0;
+    margin-top: -12px;
+    font-size: 2.4rem;
+
+    text-align: center;
+}
+
+.range p{
+    text-align: center;
+    color: var(--color-white);
+}
+
+.range p a{
+    color: var(--color-white);
+    transition-duration: 1000ms;  
+}
+
+.range p a:hover{
+    color: var(--color-pink);
+}
+
+/* == FOOTER == */
+
+footer{
+    padding: 24px 4%;
+    margin: 0 auto;
+    background-color: var(--color-pink);
+}
+
+.footer{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer a{
+    width: 100%;
+    cursor: pointer;
+    color: var(--color-pink);
+
+    font-weight: bold;
+    font-size:1.75rem;
+    font-weight: 500;
+
+    text-align: center;
+    font-variant: small-caps;
+    
+    padding: 8px 0;
+    display: inline-block;
+    background-color: var(--color-white);
+
+    transition-duration: 2000ms;
+}
+
+.footer a:hover{
+    color: var(--color-white);
+    background-color: var(--color-purple);
+}
+
+.conectaElas{
+    width: 35%;
+}
+
+.rocketseat{
+    margin-top: 12px;
+    width: 50%;
+}
+
+/* == MODAL == */
+
+.modal-overlay{
+    width: 100%;
+    height:100%;
+
+    top: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    width: 75%;
+    height:55%;
+    margin: 10vh auto;
+    background-color: var(--color-white);
+
+    position: relative;
+}
+
+.modal .close-modal{
+    color: var(--color-black);
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    position: absolute;
+}
+
+/* == MODAL INPUTS == */
+
+.modal-content h2{
+    margin-left:0;
+    padding-top: 64px;
+    margin-bottom: 16px;
+    color: var(--color-pink);
+}
+
+.modal-content input{
+    width: 100%;
+    outline:none;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.modal-content input[type=email]{
+    height: 40px;
+    padding-left: 10px;
+    
+
+    font-size: 1rem;
+    font-variant: small-caps;
+    
+    background-color: var(--color-grey);
+    border-bottom: 2px solid var(--color-pink);
+}
+
+.modal-content input[type=submit]{
+    height: 50px;
+    cursor: pointer;
+    color: var(--color-white);
+
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    background-color: var(--color-pink);
+
+    transition-duration: 1500ms;
+}
+
+.modal-content input[type=submit]:hover{
+    background-color: var(--color-purple);
+}
+
+/* == MODAL ACTIVE == */
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* == RESPONSIVE DESIGN == */
+
+@media screen and (max-width: 1060px){
+    header .imagemFundo{
+        background-image: url('../imagens/concurso-LandingPages_03.png');
+    }
+}
+
+@media screen and (max-width: 992px){
+    .headerDesktop{
+        display: none;
+    }
+
+    .headerLaptop{
+        display: block;
+        padding: 64px 0;
+        background-color: var(--color-purple);
+    }
+
+    .boxRegistration h1, h2{
+        margin-top: 0;
+        margin-left:0;
+        text-align: left;
+    }
+
+    .boxRegistration p{    
+        padding: 10px 0;
+        max-width: 100%;
+        margin-left: 0;
+        text-align: justify;
+       
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .boxRegistration a{
+        margin-left: 0;
+    }
+
+    .aboutContent p{
+        width: 472px;
+    }
+
+    .aboutImagem img{
+        height:225px;
+        width: 400px;
+        margin-top: 32px;
+    }
+
+    .slideBox{
+        flex-wrap: wrap;
+        margin-top: -40px;
+    }
+
+    .slideSingle h2{
+        top: 296px;
+    }
+
+    .slideSingle img{
+        width: 203px;
+        height:313px;
+    }
+
+    .slideSingle .back{
+        width: 203px;
+        height:313px;
+
+        margin-top: -318px;
+    }
+    
+    .slideSingle .back > p{
+        font-size: 0.80rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .aboutRocketseat{
+        flex-direction: column;
+    }
+
+    .aboutContent p{
+        width: 100%;
+    }
+
+    .aboutContent a{
+        width: 50%;
+    }
+
+    .aboutImagem img{
+        height: 100%;
+        max-height:337.5px;
+
+        width: 100%;
+        max-width: 600px;
+
+        display: block;
+        margin: 80px auto 0 auto;
+    }
+
+    .modal{
+        height: 40%;
+    }
+
+    .modal-content h2{
+        padding-top: 48px;  
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    header .imagemFundo{ 
+        height: 80vh;
+    }
+
+    .range h4{
+        padding-left: 0;
+        font-size: 2rem;
+
+        text-align: center;
+    }
+
+    .modal{
+        width: 90%;
+    }
+
+    .conectaElas{
+        width: 55%;
+    }
+    
+    .rocketseat{
+        margin-top: 12px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 512px){
+
+    header .imagemFundo{ 
+        height: 65vh;
+    }
+    
+    .sessaoQuestions h1{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .range h2{
+        font-size: 2rem;
+    }
+
+    .aboutContent a{
+        width: 100%;
+    }
+
+    .aboutImagem img{
+        margin: 64px auto 0 auto;
+    }
+
+    .mostrar{
+        height: 92px!important;
+    }
+
+    .footer a{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 416px){
+    .boxRegistration h1{
+        font-size: 2rem;
+    }
+
+    .boxRegistration h2{
+        font-size: 1.5rem;
+    }
+
+    .boxRegistration a{
+        width: 70%;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    .launchVideo{
+        padding: 40px 0;
+    }
+
+    .launchVideo iframe{
+        height: 220px;
+    }
+
+    .sessaoQuestions h1{
+        font-size: 1.4rem;
+    }
+
+    .aboutRocketseat{
+        padding: 40px 4%;
+    }
+    .aboutImagem img{
+        margin: 40px auto 0 auto;
+    }
+
+    .sessaoQuestions{
+        padding: 40px 0;
+    }
+
+    .mostrar{
+        margin-top: 12px;
+        height: 108px !important;
+    }
+
+    .range h2{
+        font-size: 1.6rem;
+    }
+
+    .benefits{
+        align-items: center;   
+        justify-content:center;
+        flex-direction: column;
+    }
+
+    .benefits .item{
+        width: 70%;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    header .imagemFundo{ 
+        height: 55vh;
+    }
+
+    .launchVideo iframe{
+        height: 205px;
+    }
+
+    .footer a{
+        font-size: 1.2rem;
+    }
+
+    .modal{
+        height: 30%;
+    }
+
+    .modal-content h2{
+        padding-top: 28px;  
+    }
+}
+
+@media screen and (max-width: 360px){
+    header .imagemFundo{ 
+        height: 50vh;
+    }
+
+    .boxRegistration h1{
+        font-size: 1.6rem;
+    }
+
+    .boxRegistration h2{
+        font-size: 1.25rem;
+    }
+
+    .boxRegistration a{
+        width: 100%;
+    }
+
+    .launchVideo iframe{
+        height: 180px;
+    }
+
+    .range h4{
+        margin-bottom:8px;
+        font-size: 1.4rem;
+    }
+
+    .range h2{
+        font-size: 1.2rem;
+    }
+
+    .footer a{
+        font-size: 1rem;
+    }
+
+    .mostrar{
+        height: 124px !important;
+    }
+
+    .cardTitle span{
+        font-size: 1.2rem;
+    }
+
+    .modal{
+        height: 35%;
+        padding: 0 4%;
+    }
+}
+
+
