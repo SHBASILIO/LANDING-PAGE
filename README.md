@@ -1,6 +1,6 @@
 ### LANDING-PAGE DE SUCESSO
 
-ProjetoO **vencedor** do concurso Landing Page de Sucesso
+Projeto **vencedor** do concurso Landing Page de Sucesso
 
 #### OBJETIVO
 
