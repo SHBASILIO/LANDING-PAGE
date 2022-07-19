@@ -5,14 +5,14 @@ Projeto **vencedor** do concurso Landing Page de Sucesso
 #### OBJETIVO
 
 <p align="justify">
-Este projeto foi um dos vencedores do consurso LANDING PAGE DE SUCESSO. O desafio proposto era o desenvolvimento de uma landing page com o objetivo de divulgar o consurso de bolsas de estudo da Rocketseat com o Conecta Elas - @laizabsobral e captar leads.
+Este projeto foi um dos vencedores do concurso LANDING PAGE DE SUCESSO. O desafio proposto era o desenvolvimento de uma landing page com o objetivo de divulgar o concurso de bolsas de estudo da Rocketseat com o Conecta Elas - @laizabsobral e captar leads.
 </p>
 
 #### REQUISITOS PARA O DESENVOLVIMENTO DA PÁGINA
 
 * Estar no formato landing page
 * Seguir o objetivo da landing page
-* Resolver o desafiosproposto: Captura de Leads
+* Resolver o desafio proposto: Captura de Leads
 
 #### CRITÉRIOS AVALIADOS
 
